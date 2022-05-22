@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Poker</title>
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/practicar.css">
+    <script src="https://kit.fontawesome.com/9ff96f2da2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="main-header">
+        <div id="logo" class="main-logo">
+            <a  href="./index.html"><img src="./assets/img/logo.png" alt="logo"></a>
+            <a href="./index.html" class="texto-logo">RED HEART</a>
+        </div>
+        <nav id="nav" class="main-nav">
+            <div class="nav-link">
+                <a class="link-item" href="./contacto.html">Contacto</a> 
+                <a class="link-item" href="./aprender.html">Aprender</a> 
+                <a class="link-item" href="./practicar.html">Practicar</a>
+            </div>
+        </nav>
+        <button id="boton-menu" class="boton-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+    </header>
+    <main>
+        <section id="intro" class="intro">
+            <h1>Calcula el valor de tu mano!</h1> 
+        </section>
+        <section id="contenedorJuego" class="contenedor-juego">
+            <div class="contenedor-tablero">
+                <div id="" class="tablero">
+                    <div class="carta"><img id="carta1" src="./assets/img/basicbackred.png" alt=""></div>
+                    <div class="carta"><img id="carta2" src="./assets/img/basicbackred.png" alt=""></div>
+                    <div class="carta"><img id="carta3" src="./assets/img/basicbackred.png" alt=""></div>
+                    <div class="carta"><img id="carta4" src="./assets/img/basicbackred.png" alt=""></div>
+                    <div class="carta"><img id="carta5" src="./assets/img/basicbackred.png" alt=""></div>
+                </div>
+                <div class="btn-barajar">
+                    <button onclick="barajar()">Repartir</button>
+                    <button onclick="btnBorrar()">Borrar</button>
+                </div>
+                <div class="resultado"></div>
+            </div>
+            <div class="contenedor-opciones">
+                <span>ELIJE UNA OPCIÓN</span>
+                <button value="9" onclick="compararRank(this.value)">Carta Alta</button>
+                <button value="8" onclick="compararRank(this.value)">Pareja</button>
+                <button value="7" onclick="compararRank(this.value)">Doble Pareja</button>
+                <button value="6" onclick="compararRank(this.value)">Trio</button>
+                <button value="5" onclick="compararRank(this.value)">Escalera</button>
+                <button value="4" onclick="compararRank(this.value)">Color</button>
+                <button value="3" onclick="compararRank(this.value)">Full House</button>
+                <button value="2" onclick="compararRank(this.value)">Poker</button>
+                <button value="1" onclick="compararRank(this.value)">Escalera de color</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-footer">
+            <nav class="footer-social">
+                <a href="https://www.twitch.tv/djesusunchained" target="_blank" class="footer-social-icon"><i class="fa fa-twitch"></i></a>
+                <a href="https://www.instagram.com/djesusunchained" target="_blank" class="footer-social-icon"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/djesusunchained" target="_blank" class="footer-social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="#" target="_blank" class="footer-social-icon"><i class="fa fa-youtube"></i>
+                </a>	
+            </nav>
+    
+            <nav class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li id="menu-item" class="menu-item"><a href="#">Términos</a></li>
+                    <li id="menu-item" class="menu-item"><a href="#">Política de privacidad</a></li>
+                    <li id="menu-item" class="menu-item"><a href="#">Aviso Legal</a></li>
+                    <li id="menu-item" class="menu-item"><a href="#">Política de cookies</a></li>
+                    <li id="menu-item" class="menu-item"><a href="#">Jugar Bien</a></li>
+                    <li id="menu-item" class="menu-item"><a>yoalfreparra@gmail.com</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-derechos">
+                <p>©Yoalfre - Todos los derechos reservados</p>
+            </nav>
+                    
+        </div>
+    </footer>
+    
+    <script src="./JS/main.js"></script>
+    <script src="./JS/practicar.js"></script>
+
+</body>
+</html>

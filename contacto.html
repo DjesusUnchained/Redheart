@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Poker</title>
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/contacto.css">
+    <script src="https://kit.fontawesome.com/9ff96f2da2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="main-header">
+        <div id="logo" class="main-logo">
+          <a  href="./index.html"><img src="./assets/img/logo.png" alt="logo"></a>
+          <a href="./index.html" class="texto-logo">RED HEART</a>
+        </div>
+        <nav id="nav" class="main-nav">
+            <div class="nav-link">
+                <a class="link-item" href="./contacto.html">Contacto</a> 
+                <a class="link-item" href="./aprender.html">Aprender</a> 
+                <a class="link-item" href="./practicar.html">Practicar</a>
+            </div>
+        </nav>
+        <button id="boton-menu" class="boton-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+    </header>
+    <main>
+        <section id="contacto" class="contacto">
+            <form action="https:www.google.com" id="Formulario" class="my-form">
+                <div class="container">
+                  <h1>Contactanos!</h1>
+                  <h4></h4>
+                  <ul>
+                    <li>
+                      <select>
+                        <option selected disabled>-- Por favor elija una opcion --</option>
+                        <option>Informacion de planes</option>
+                        <option>Sugerencias</option>
+                        <option>Otros</option>      
+                      </select>
+                    </li>
+                    <li>
+                      <div class="grid grid-2">
+                        <input id="nombre" type="text" placeholder="Nombre" required> 
+                        <input id="apellido" type="text" placeholder="Apellido" required>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid grid-2">
+                        <input id="email" type="email" placeholder="Email" required>  
+                        <input id="telefono" type="tel" placeholder="Telefono">
+                      </div>
+                    </li>    
+                    <li>
+                      <textarea id="textarea"placeholder="Mensaje"></textarea>
+                    </li>   
+                    <li>
+                      <input type="checkbox" id="terminos">
+                      <label for="terminos">He leido y acepto <a href="">los terminos y condiciones</a></label>
+                    </li>  
+                    <li>
+                      <div class="grid grid-3">
+                        <div class="required-msg">Campos requeridos</div>
+                        <button class="btn-grid" type="submit" disabled>
+                          <span class="back">
+                            <img src="./assets/img/email-icon.svg" alt="">
+                          </span>
+                          <span class="front">ENVIAR</span>
+                        </button>
+                        <button class="btn-grid" type="reset" disabled>
+                          <span class="back">
+                            <img src="./assets/img/eraser-icon.svg" alt="">
+                          </span>
+                          <span class="front">BORRAR</span>
+                        </button> 
+                      </div>
+                    </li>    
+                  </ul>
+                </div>
+              </form>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="container-footer">
+          <nav class="footer-social">
+            <a href="https://www.twitch.tv/djesusunchained" target="_blank" class="footer-social-icon"><i class="fa fa-twitch"></i></a>
+            <a href="https://www.instagram.com/djesusunchained" target="_blank" class="footer-social-icon"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/djesusunchained" target="_blank" class="footer-social-icon"><i class="fa fa-twitter"></i></a>
+            <a href="#" target="_blank" class="footer-social-icon"><i class="fa fa-youtube"></i>
+            </a>	
+          </nav>
+  
+          <nav class="footer-menu">
+              <ul class="footer-menu-list">
+                  <li id="menu-item" class="menu-item"><a href="#">Términos</a></li>
+                  <li id="menu-item" class="menu-item"><a href="#">Política de privacidad</a></li>
+                  <li id="menu-item" class="menu-item"><a href="#">Aviso Legal</a></li>
+                  <li id="menu-item" class="menu-item"><a href="#">Política de cookies</a></li>
+                  <li id="menu-item" class="menu-item"><a href="#">Jugar Bien</a></li>
+                  <li id="menu-item" class="menu-item"><a>yoalfreparra@gmail.com</a></li>
+              </ul>
+          </nav>
+          <nav class="footer-derechos">
+              <p>©Yoalfre - Todos los derechos reservados</p>
+          </nav>
+                  
+      </div>
+  </footer>
+    
+  <script src="./JS/main.js"></script>
+  <script src="./JS/contacto.js"></script>
+</body>
+</html>
