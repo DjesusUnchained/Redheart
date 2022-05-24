@@ -21,7 +21,7 @@ function validarFormulario(evento) {
   const textarea = document.getElementById('textarea').value;
     
 
-    if (nombre.length === 0) {
+    if (nombre.length == 0) {
       console.log(nombre)
       cuadroAlerta.innerHTML = "No has escrito ningun nombre";
   
@@ -49,30 +49,31 @@ function validarFormulario(evento) {
       return;
     }
 
-    // if (!telefonoValido(telefono)) {
-    //   cuadroAlerta.innerHTML = "Por favor, escribe un numero de telefono valido";
-    //   return;
-    // }
+    if (!telefonoValido(telefono)) {
+      cuadroAlerta.innerHTML = "Por favor, escribe un numero de telefono valido";
+      return;
+    }
 
     if (textarea.length < 20) {
       cuadroAlerta.innerHTML = "Escribe un mensaje de al menos 20 caracteres";
       return;
     }
 
+    alert("Su consulta ha sido enviada correctamente, en breve nos comunicaremos con ud. Gracias!");
     formulario.submit();
 
   }
 
 const emailValido = function(email) {
-  const num =
+  const mail =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return num.test(String(email).toLowerCase());
+  return mail.test(String(email).toLowerCase());
 }
 
-// const telefonoValido = function(telefono) {
-//   let num = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/;
-//   return num.test(String(telefono).toLocaleLowerCase());
-// }
+const telefonoValido = function(telefono) {
+  let num = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/g;
+  return num.test(String(telefono).toLocaleLowerCase());
+}
 
 
 formulario.addEventListener("submit", validarFormulario);

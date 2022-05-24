@@ -2,15 +2,12 @@
 
 :root {
     --white: #afafaf;
-    --red: #e31b23;
     --bodyColor: #292a2b;
     --borderFormEls: hsl(0, 0%, 10%);
-    --bgFormEls: hsl(0, 0%, 14%);
-    --bgFormElsFocus: hsl(0, 7%, 20%);
   }
 
 body {
-    background: var(--white);
+    background: var(--bodyColor);
 }
 
 .contenedor-aprender {
@@ -20,8 +17,6 @@ body {
     background-color: white;
     box-sizing: border-box;
     justify-content: space-around;
-    /* border-color: black;
-    border-style: solid; */
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 85%; 
@@ -32,9 +27,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    /* border-color: black;
-    border-style:solid; */
-    /* border-width: 1px; */
     max-height: max-content;
     width: 100%;
     height: 100px;
@@ -42,7 +34,7 @@ body {
     min-height: auto;
     justify-content: center;
     margin: 0 0;
-    background-color: var(--white);
+    background-color: var(--bodyColor);
     color: white;
     text-shadow: 2px 2px 4px black;
     font: 24px "Open Sans", sans-serif;
@@ -50,30 +42,29 @@ body {
 }
 
 .ranking {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font:"Open Sans", sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    /* border-color: black;
-    border-style:solid; */
-    /* border-width: 1px; */
     max-height: max-content;
     width: 100%;
     flex: 1 1 auto;
     min-height: auto;
     justify-content: center;
     padding: 50px 0;
-    background-color: var(--white);
+    background-color: var(--bodyColor);
 }
 
 .ranking2 {
+    text-shadow: 2px 2px 4px var(--white);
+    font:"Open Sans", sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    /* border-color: black;
-    border-style:solid;
-    border-width: 1px; */
     max-height: max-content;
     width: 100%;
     flex: 1 1 auto;
