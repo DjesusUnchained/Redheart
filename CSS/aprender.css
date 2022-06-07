@@ -14,7 +14,6 @@ body {
     display: flex;
     flex-direction: row;
     height: auto;
-    background-color: white;
     box-sizing: border-box;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -104,10 +103,14 @@ body {
 
     .ranking2 {
         flex-flow: column-reverse;
+        border-radius: 10px;
     }
 
     .texto-ranking {
         padding: 0;
+        width: 85%;
+        max-width: 85%;
+    
     }
 
     .imagen-ranking {
@@ -115,5 +118,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+
 
 }
