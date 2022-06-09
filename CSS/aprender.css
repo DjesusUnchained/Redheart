@@ -71,6 +71,7 @@ body {
     justify-content: center;
     padding: 50px 0;
     background-color: white;
+    border-radius: 10px;
 }
 
 .imagen-ranking {
@@ -103,7 +104,6 @@ body {
 
     .ranking2 {
         flex-flow: column-reverse;
-        border-radius: 10px;
     }
 
     .texto-ranking {
